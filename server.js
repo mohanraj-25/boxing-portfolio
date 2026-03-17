@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 
 // serve frontend files
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname,"public")));
 
 // ===============================
 // DATABASE CONNECTION (TiDB)
@@ -44,7 +44,7 @@ db.connect((err) => {
 
 // homepage
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "public","index.html"));
 });
 
 // registration API
