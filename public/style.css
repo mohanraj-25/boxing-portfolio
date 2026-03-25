@@ -1,117 +1,109 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Import sports style font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Roboto', sans-serif;
+    background: linear-gradient(rgba(211, 219, 0, 0), rgba(0, 0, 0, 0)),
+    url("https://images.unsplash.com/photo-1549719386-74dfcbf7dbed");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
 }
 
-/* BODY */
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #eef2f7;
+/* Header */
 
-    display: flex;
-    justify-content: center;   /* center horizontally */
-    align-items: center;       /* center vertically */
-    height: 100vh;
+h1{
+    font-family:'Bebas Neue', sans-serif;
+    font-size:60px;
+    letter-spacing:3px;
+    color:#ff2e2e;
+    text-shadow:0px 0px 10px red;
+    margin-top:40px;
 }
 
-/* MAIN CONTAINER (LIKE MOBILE SCREEN) */
-.container {
-    width: 100%;
-    max-width: 400px;   /* mobile width */
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-
-    display: flex;
-    flex-direction: column;   /* VERTICAL */
-    gap: 20px;
+h2{
+    font-family:'Bebas Neue', sans-serif;
+    font-size:40px;
+    color:#ffffff;
+    margin-top:30px;
 }
-
-/* PROFILE SECTION */
-.left {
-    text-align: center;
-}
-
-.left h1 {
-    font-size: 26px;
-    color: #2c3e50;
-}
-
-.role {
-    font-size: 14px;
-    color: #777;
+/* PROFILE IMAGE */
+.profile-img {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;   /* makes it circular */
+    object-fit: cover;
     margin-bottom: 10px;
+    border: 5px solid #ff0819;
 }
 
-.left h2 {
-    font-size: 18px;
-    margin: 10px 0;
+/* Form container */
+
+form{
+    width:350px;
+    margin:40px auto;
+    padding:30px;
+    background:rgba(245, 242, 242, 0.7);
+    border-radius:15px;
+    box-shadow:0px 0px 20px rgba(255,0,0,0.5);
 }
 
-.left p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.5;
+/* Input fields */
+
+input{
+    width:90%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
 }
 
-/* BUTTON */
-button {
-    margin-top: 15px;
-    width: 100%;
-    padding: 12px;
-    background: #3498db;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
+/* Input focus animation */
+
+input:focus{
+    box-shadow:0 0 10px red;
 }
 
-button:hover {
-    background: #2980b9;
+/* Register Button */
+
+button{
+    width:150px;
+    padding:12px;
+    margin-top:15px;
+    background:#ff1a1a;
+    border:none;
+    border-radius:25px;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
 }
 
-/* CARDS */
-.card {
-    background: #f9fbfd;
-    padding: 15px;
-    border-radius: 10px;
+/* Button hover */
+
+button:hover{
+    background:#b30000;
+    transform:scale(1.05);
+    box-shadow:0 0 15px red;
 }
 
-/* HEADINGS */
-.card h3 {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #2c3e50;
+/* Links */
+
+a{
+    text-decoration:none;
 }
 
-/* LIST */
-.card ul {
-    list-style: none;
-}
+/* Footer */
 
-.card ul li {
-    font-size: 14px;
-    margin-bottom: 6px;
-    color: #555;
-}
-
-/* CONTACT */
-.card p {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-/* FOOTER */
-.footer {
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    width: 100%;
-    font-size: 12px;
-    color: #888;
+footer{
+    margin-top:40px;
+    padding:15px;
+    font-size:14px;
+    background:rgba(252, 247, 247, 0.8);
 }
